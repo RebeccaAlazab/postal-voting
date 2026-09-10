@@ -1,0 +1,528 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Overview–  Voting in the UK 
+{% endblock %}
+
+{% block header %}
+  {# Blank header with no service name for this page #}
+  <header>{{govukHeader()}}</header>
+{% endblock %}
+
+{% block pageScripts %}
+  <script type="text/javascript">
+    var $element = document.querySelector('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav($element).init()
+  </script>
+{% endblock %}
+
+{% block containerStart %}
+  <div class="app-step-nav-header">
+    <span class="app-step-nav-header__part-of">Part of</span>
+    <a class="app-step-nav-header__title" href="#">
+      Vote in UK elections
+    </a>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+       <h1 class="govuk-heading-xl">
+        How to vote
+      </h1>
+
+<aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+<li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+               Overview
+
+            </li>
+
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+              Voting in person
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="/postalvoting">
+              Voting by post
+              </a>
+            </li>
+             <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+              Voting by proxy
+              </a>
+            </li>
+             <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+               <a href="#">
+               Voting from abroad
+               </a>
+            </li>
+             <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+              Photo ID you'll need
+              </a>
+            </li>
+             <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+              Voting as a proxy for someone else
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+
+      <h1 class="govuk-heading-l">
+        Overview
+      </h1>
+
+
+      <p class="govuk-body">You need to be
+  <a class="govuk-link">registered to vote</a> before you can vote in UK elections or referendums.
+</p>
+
+<p class="govuk-body">You need to show photo ID when voting in person in some elections and referendums in England, Scotland and Wales.</p>
+
+
+<p class="govuk-body">
+  <a class="govuk-link">Check which elections you need photo ID for and which types of ID you can use</a> before you go to vote.
+</p>
+
+
+<p class="govuk-body"> There are different rules
+  <a class="govuk-link">if you vote in Northern Ireland.</a>
+</p>
+
+
+
+
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+{{ govukInsetText({
+  text: "This guide is also available in Welsh (Cymraeg)."
+}) }}
+
+
+<h2 class="govuk-heading-m">
+        Your eligibility to vote
+</h2>
+
+<p class="govuk-body">Your eligibility to vote will depend on:</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>your age</li>
+    <li>your nationality</li>
+    <li>where you live</li>
+    <li>whether you're registered to vote</li>
+  </ul>
+
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+{{ govukInsetText({
+  text: "Different elections and referendums in the UK have different rules about who can vote. 
+  This means that not everyone can vote in every situation."
+}) }}
+
+<p class="govuk-body"> 
+  <a class="govuk-link">Find out more about different elections and check your eligibility to vote</a>
+</p>
+
+
+<h2 class="govuk-heading-m">
+Way of voting
+</h2>
+
+<p class="govuk-body">Once registered, you can:</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li><a class="govuk-link">vote in person at a polling station</a></li>
+    <li>apply to <a class="govuk-link">vote by post</a></li>
+    <li>apply to <a class="govuk-link">have someone else to vote for you (voting by proxy)</a> </li>
+    
+  </ul>
+
+
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+{{ govukInsetText({
+  text: "You cannot vote online in any elections."
+}) }}
+
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+    <div class="app-step-nav-related app-step-nav-related--singular">
+      <h2 class="app-step-nav-related__heading">
+        <span class="app-step-nav-related__pretitle">Part of</span>
+        <a class="govuk-link">
+          Vote in UK elections
+        </a>
+      </h2>
+    </div>
+
+    <div data-module="appstepnav"id="step-by-step-navigation" class="app-step-nav govuk-!-display-none-print js-hidden" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all steps" data-hide-all-text="Hide all steps">
+      <ol class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step app-step-nav__step--active" aria-current="step" id="check-you-re-allowed-to-drive">
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 1<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Check if you can vote
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-you-re-allowed-to-drive-1">
+
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item app-step-nav__list-item--active">
+                <a data-position="1.1" class="app-step-nav__link js-link" href="#">
+                  <span class="app-step-nav__link-active-context govuk-visually-hidden">You are currently viewing: </span>
+
+          <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.1" class="app-step-nav__link js-link" class="govuk-link">Check which elections you can vote in </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence">
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 2<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Register to vote
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-get-a-provisional-licence-2">
+            <p class="app-step-nav__paragraph">You’ll need to be registered to vote to take part in elections and referendums. 
+              You’ll need to register again if you change your name, address or nationality.</p>
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item">
+                <a data-position="2.1" class="app-step-nav__link js-link" class="govuk-link">Register to vote - apply online</a>
+                <br><br>
+                <a data-position="2.1" class="app-step-nav__link js-link" class="govuk-link">Register to vote - apply by post </a>
+
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice">
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 3<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Decide if you want to vote in person, by post, or by proxy
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+            <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.1" class="app-step-nav__link js-link" class="govuk-link">Find out the different ways you can vote </a>
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-theory-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="5">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 3<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Get ready to vote in person
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-prepare-for-your-theory-test-4">
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.1" class="app-step-nav__link js-link" class="govuk-link">Check what ID you need to vote </a>
+              </li>
+                <p class="app-step-nav__paragraph">If you do not have photo ID that allows you to vote, 
+                  you can apply for a Voter Authority Certificate (or an Electoral Identity Card in Northern Ireland) .</p>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.2" class="app-step-nav__link js-link" class="govuk-link">Apply for a photo ID to vote</a>
+              </li>
+              <p class="app-step-nav__paragraph">Contact your electoral registration office to find your polling station 
+                or to find out what to do if you have accessibility needs.</p>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a rel="external" data-position="4.3" class="app-step-nav__link js-link" class="govuk-link">Contact your electoral registration office</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-theory-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="5">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Apply for a postal vote
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-theory-test-5">
+            <p class="app-step-nav__paragraph">In England, Scotland or Wales</p>
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.1" class="app-step-nav__link js-link" href="/postalvoting">apply online for a postal vote</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.2" class="app-step-nav__link js-link" class="govuk-link">apply by post for a postal vote </a>
+              </li>
+              <br>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.3" class="app-step-nav__link js-link" class="govuk-link">Apply in Northern Ireland - by post only </a>
+              </li>
+            
+            </ol>
+
+
+            
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+            <h3 class="app-step-nav__title">
+               <span class="app-step-nav__circle">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Apply for a proxy vote
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-driving-test-6">
+            <p class="app-step-nav__paragraph">In England, Scotland or Wales</p>
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.1" class="app-step-nav__link js-link" class="govuk-link">apply online for a proxy vote</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.2" class="app-step-nav__link js-link" class="govuk-link">apply by post for a proxy vote </a>
+              </li>
+              <br>
+
+            <ol class="app-step-nav__list " data-length="5">
+
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.2" class="app-step-nav__link js-link" class="govuk-link">Apply in Northern Ireland - by post only </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.3" class="app-step-nav__link js-link" class="govuk-link">Find out more about voting by proxy - including when you must apply by</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+               <span class="app-step-nav__circle">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span><span class="js-step-title">
+                Get ready to vote as a proxy
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+             <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Check what ID you need to vote </a>
+              </li>
+            </ol>
+            <p class="app-step-nav__paragraph">Contact the electoral registration office of the person you are a proxy for to find their polling station or to find out what to do if you have accessibility issues.</p>
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Contact the electoral registration</a>
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+      </ol>
+      <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 6<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Vote in person
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Vote in person </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+      </ol>
+      <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+               <span class="app-step-nav__circle">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Vote by post
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Vote by post </a>
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+      </ol>
+      <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+               <span class="app-step-nav__circle">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Vote as a proxy for someone else
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Vote as a proxy for someone else</a>
+              </li>
+            </ol>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+</div>
+
+
+
+{% from "govuk/components/pagination/macro.njk" import govukPagination %}
+{{ govukPagination({
+  next: {
+    labelText: "Voting in person",
+    href: "#"
+  }
+}) }}
+
+
+<p>
+<a class="govuk-link"> View a printable version of the whole guide.</a> 
+</p>
+
+</div>
+
+</div>
+
+{% endblock %}

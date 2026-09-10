@@ -1,0 +1,497 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page - Apply for a postal vote 
+{% endblock %}
+
+{% block header %}
+  <header>
+    {{govukHeader()}}
+  </header>
+{% endblock %}
+
+{% block pageScripts %}
+  <script type="text/javascript">
+    var $element = document.querySelector('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav($element).init()
+  </script>
+{% endblock %}
+
+{% block containerStart %}
+  <div class="app-step-nav-header">
+    <span class="app-step-nav-header__part-of">Part of</span>
+    <a class="app-step-nav-header__title" class="govuk-link">
+      Vote in UK elections
+    </a>
+  </div>
+ 
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Apply for a postal vote 
+      </h1>
+
+      <p>Use this service to apply for a postal vote in:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>general elections and other UK Parliamentary elections in England, Scotland or Wales</li>
+        <li>local elections in England (including mayors) </li>
+        <li>Police and Crime Commissioner elections in England and Wales</li>
+        <li>national referendums if you live in England, Scotland and Wales</li>
+        <li>MP recall petitions in England, Scotland and Wales</li>
+      </ul>
+
+      <p>If you're registered to vote anonymously (this means your name and address do not appear on the 
+        electoral register), apply for your postal vote through your <a class="govuk-link">electoral registration offices.</a></p>
+
+        {% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+{{ govukInsetText({
+  text: "This service is also available in Welsh (Cymraeg)."
+}) }}
+
+
+
+      {{ govukButton({
+        text: "Start now",
+        href: "/end",
+        isStartButton: true
+      }) }}
+
+      <h2 class="govuk-heading-m">
+        Before you start
+      </h2>
+        <p> To apply for a postal vote you'll need:</p>
+
+       <ul class="govuk-list govuk-list--bullet">
+        <li>the address where you are registered to vote</li>
+
+        <li>your <a class="govuk-link">National Insurance number</a> or other documents, for example a passport</li>
+        <li>the specific date of the election or referendum you want to make a postal vote, if you only want a one-off postal vote</li>
+      
+      </ul>
+
+      <p>
+       You'll also need to upload a photo of your handwritten signature in black ink on plain white paper.
+      </p>
+
+      <p>
+        If you cannot provide a signature or one that always looks the same, you may be able to apply for a postal vote signature waiver within the service
+      </p>
+
+
+       {% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+{{ govukInsetText({
+  text: "You must be registered to vote in the UK before you apply for a postal vote. "
+}) }}
+
+
+<h2 class="govuk-heading-m">
+        If you'll be abroad during an election
+      </h2>
+
+     <p> Apply for a postal vote as soon as possible if you:</p>
+
+       <ul class="govuk-list govuk-list--bullet">
+        <li>live abroad</li>
+        <li>are travelling abroad during an election </li>
+      </ul>
+
+      <p>Your electoral registration office sends out postal vote ballot packs no earlier than 19 working days before the election.
+         If you need your ballot pack to be sent abroad it can take a long time to reach you and get back to the UK.
+      </p>
+      
+      <p>If you’re travelling abroad and your pack will not reach you before you travel, you can <a class="govuk-link">vote by proxy</a> instead.</p>
+
+<h2 class="govuk-heading-m">
+        Stop voting by post
+      </h2>
+<p>If you no longer want to vote by post and want to vote in person instead, contact your <a class="govuk-link">electoral registration office.</a> 
+  You must contact your electoral registration office no later than 11 working days before the election and by 5pm on that day.</p>
+
+<p>If you want to vote by proxy instead,  <a class="govuk-link">apply for a proxy vote.</a>  You must apply no later than 11 working days before the 
+  election and by 5pm on that day.</p>
+
+
+<h2 class="govuk-heading-m">
+Change where your postal vote is sent</h2>
+
+<p>If you’ll be away from home when the postal vote ballot pack is sent out, for example, on holiday or because of work commitments, 
+  you can apply for your pack to be sent to a different address. You must apply no later than 11 working days before the election and 
+  by 5pm on that day. Contact your <a class="govuk-link">electoral registration office</a>  to change your address.</p>
+
+
+<h2 class="govuk-heading-m">
+If you move house</h2>
+
+<p>If you move house, you must <a class="govuk-link"> re-register to vote</a>  at your new address, then reapply for a postal vote for your new address.</p>
+
+
+<h2 class="govuk-heading-m">
+Other ways to apply for a postal vote</h2>
+
+<p>If you cannot apply online, download and fill in a <a class="govuk-link"> postal vote application form.</a>  
+  Send it to your <a class="govuk-link"> electoral registration office.</a></p>
+
+  <p>Contact your <a class="govuk-link"> electoral registration office</a> if:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+        <li>you cannot print a copy of the postal voting application form</li>
+        <li>you cannot sign a printed form </li>
+      </ul>
+
+
+<h2 class="govuk-heading-m">
+Get help applying</h2>
+
+<p>There’s an<a class="govuk-link">  easy read guide about applying for a postal vote online.</a> </p>
+
+
+
+    </div>
+
+  
+<br><br><br><br><br><br>
+  <div class="govuk-grid-column-one-third">
+
+    <div class="app-step-nav-related app-step-nav-related--singular">
+      <h2 class="app-step-nav-related__heading">
+        <span class="app-step-nav-related__pretitle">Part of</span>
+        <a class="govuk-link">
+          Vote in UK elections
+        </a>
+      </h2>
+    </div>
+
+
+
+    <div data-module="appstepnav"id="step-by-step-navigation" class="app-step-nav govuk-!-display-none-print js-hidden" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all steps" data-hide-all-text="Hide all steps">
+      <ol class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step app-step-nav__step--active" aria-current="step" id="check-you-re-allowed-to-drive">
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 1<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Check if you can vote
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-you-re-allowed-to-drive-1">
+
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item app-step-nav__list-item--active">
+                <a data-position="1.1" class="app-step-nav__link js-link" class="govuk-link">
+                  <span class="app-step-nav__link-active-context govuk-visually-hidden">You are currently viewing: </span>
+
+          <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.1" class="app-step-nav__link js-link" class="govuk-link">Find out the different ways you can vote </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence">
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 2<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Register to vote
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-get-a-provisional-licence-2">
+            <p class="app-step-nav__paragraph">You’ll need to be registered to vote to take part in elections and referendums. You’ll need to register again if you change your name, address or nationality.</p>
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item">
+                <a data-position="2.1" class="app-step-nav__link js-link" class="govuk-link">Register to vote - apply online</a>
+                <br><br>
+                <a data-position="2.1" class="app-step-nav__link js-link" class="govuk-link">Register to vote - apply by post </a>
+
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice">
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 3<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Decide if you want to vote in person, by post, or by proxy
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+            <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="3.1" class="app-step-nav__link js-link" class="govuk-link">Find out the different ways you can vote </a>
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-theory-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="5">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 3<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Get ready to vote in person
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-prepare-for-your-theory-test-4">
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.1" class="app-step-nav__link js-link" class="govuk-link">Check what ID you need to vote </a>
+              </li>
+                <p class="app-step-nav__paragraph">If you do not have photo ID that allows you to vote, you can apply for a Voter Authority Certificate.</p>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="4.2" class="app-step-nav__link js-link" class="govuk-link">Apply for a Voter Authority Certificate</a>
+              </li>
+              <p class="app-step-nav__paragraph">Contact your electoral registration office to find your polling station or to find out what to do if you have accessibility needs.</p>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a rel="external" data-position="4.3" class="app-step-nav__link js-link" class="govuk-link">Contct your electoral registration office </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-theory-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="5">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Apply for a postal vote
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-theory-test-5">
+            <p class="app-step-nav__paragraph">In England, Scotland or Wales</p>
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.1" class="app-step-nav__link js-link" class="govuk-link">apply online for a postal vote</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.2" class="app-step-nav__link js-link" class="govuk-link">apply by post for a postal vote </a>
+              </li>
+              <br>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.3" class="app-step-nav__link js-link" class="govuk-link">Apply in Northern Ireland - by post only </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.4" class="app-step-nav__link js-link" class="govuk-link">Find out more about voting by post </a>
+            </ol>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test">
+          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+            <h3 class="app-step-nav__title">
+               <span class="app-step-nav__circle">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Apply for a proxy vote
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-book-and-manage-your-driving-test-6">
+            <p class="app-step-nav__paragraph">In England, Scotland or Wales</p>
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.1" class="app-step-nav__link js-link" class="govuk-link">apply online for a proxy vote</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.2" class="app-step-nav__link js-link" class="govuk-link">apply by post for a proxy vote </a>
+              </li>
+              <br>
+
+            <ol class="app-step-nav__list " data-length="5">
+
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.2" class="app-step-nav__link js-link" class="govuk-link">Apply in Northern Ireland - by post only </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.3" class="app-step-nav__link js-link" class="govuk-link">Find out more about voting by proxy - including when you must apply by</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+               <span class="app-step-nav__circle">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span><span class="js-step-title">
+                Get ready to vote as a proxy
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+             <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Check what ID you need to vote </a>
+              </li>
+            </ol>
+            <p class="app-step-nav__paragraph">Contact the electoral registration office of the person you are a proxy for to find their polling station or to find out what to do if you have accessibility issues.</p>
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Contact the electoral registration</a>
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+      </ol>
+      <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> 6<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Vote in person
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Vote in person </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+      </ol>
+      <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+               <span class="app-step-nav__circle">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Vote by post
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Vote by post </a>
+              </li>
+            </ol>
+
+          </div>
+
+        </li>
+      </ol>
+      <li class="app-step-nav__step js-step" id="when-you-pass">
+          <div class="app-step-nav__header js-toggle-panel" data-position="7">
+            <h3 class="app-step-nav__title">
+               <span class="app-step-nav__circle">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden govuk-!-display-none-print">Step</span> or<span class="govuk-visually-hidden govuk-!-display-none-print" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Vote as a proxy for someone else
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-when-you-pass-7">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Vote as a proxy for someone else</a>
+              </li>
+            </ol>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
