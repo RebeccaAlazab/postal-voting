@@ -93,16 +93,33 @@
       <h1 class="govuk-heading-l">
         Voting by post
       </h1>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/Abl8WliyXSc?si=rVlgB758Q9O6HwKp ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h2 class="govuk-heading-m">How does postal voting work?</h2>
-     
-
-      <p> input drop down</p>
 
 
-<p class="govuk-body">This video explains how postal voting works, including how you use a postal vote, who can apply 
-  for one, and how your postal vote gets counted on election day.</p>
+
+<div style="width: 100%; max-width: 560px; aspect-ratio: 16 / 9; margin: 0 auto;">
+  <iframe 
+    style="width: 100%; height: 100%; border: 0;"
+    src="https://www.youtube.com/embed/Abl8WliyXSc?si=rVlgB758Q9O6HwKp&rel=0" 
+    title="YouTube video player" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+   <h2 class="govuk-heading-m">What is postal voting?</h2>
+<p class="govuk-body">This video explains what postal voting is, who can apply for a postal vote, and what happens to your vote on polling day.</p>
  <p class="govuk-body">GOV.UK • 2 minutes 8 seconds </p>
+
+ {% from "govuk/components/details/macro.njk" import govukDetails %}
+
+{% call govukDetails({
+  summaryText: "Transcript"
+}) %}
+  We need to know your nationality so we can work out which elections you’re entitled to vote in.
+  If you cannot provide your nationality, you’ll have to send copies of identity documents through the post.
+{% endcall %}
+
+
 
   <br><br>
 
