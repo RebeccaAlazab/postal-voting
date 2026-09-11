@@ -94,8 +94,7 @@
         Voting by post
       </h1>
 
-
-<div style="width: 100%; max-width: 560px; aspect-ratio: 16 / 9; margin: 0;">
+<div class="govuk-!-margin-bottom-2" style="width: 100%; max-width: 560px; aspect-ratio: 16 / 9; margin: 0;">
   <iframe 
     style="width: 100%; height: 100%; border: 0;"
     src="https://www.youtube.com/embed/Abl8WliyXSc?si=rVlgB758Q9O6HwKp&rel=0" 
@@ -105,18 +104,28 @@
     allowfullscreen>
   </iframe>
 </div>
-
-   <h2 class="govuk-heading-m">What is  a postal vote?</h2>
-<p class="govuk-body">This video explains what postal voting is, who can apply for a postal vote, and what happens to your vote on polling day.</p>
-<p class="app-step-nav__paragraph">GOV.UK • 2 minutes 8 seconds</p>
+<h2 class="govuk-heading-m govuk-!-margin-top-0 govuk-!-margin-bottom-2">What is a postal vote?</h2>
+<p class="govuk-body govuk-!-margin-bottom-2">This video explains what postal voting is, who can apply for a postal vote, and what happens to your vote on polling day.</p>
+<p class="app-step-nav__paragraph">GOV.UK • 1 minutes 48 seconds</p>
 
  {% from "govuk/components/details/macro.njk" import govukDetails %}
 
 {% call govukDetails({
   summaryText: "Transcript"
 }) %}
-  We need to know your nationality so we can work out which elections you’re entitled to vote in.
-  If you cannot provide your nationality, you’ll have to send copies of identity documents through the post.
+  <p class="govuk-body">A postal vote allows you to vote without having to visit a polling station. Instead of voting in person, your ballot paper will be sent to you by post a few weeks before an election. You simply mark your choice on the ballot paper, complete and sign the postal voting statement, seal everything in the pre-paid envelope, and return it by post.</p>
+
+  <p class="govuk-body">Anyone can apply, and if you’re voting in England, Scotland, or Wales, you don’t need to give a reason why you want to vote by post.</p>
+
+  <p class="govuk-body">To apply for a postal vote, you must be registered to vote first. If you’re not already registered, you can do this on the GOV.UK website.</p>
+
+  <p class="govuk-body">If you need a postal vote for an upcoming election, you’ll need to apply by 5pm, 11 days before polling day. Applying on GOV.UK takes a few minutes and you’ll need to know your National Insurance number, which you can find on a payslip, on letters from HMRC, or on GOV.UK by searching for ‘find my national insurance number.’ As a part of the application, you’ll also need to upload an image of your signature which will be used to verify your identity each time you vote - so make sure you have a pen and paper to hand.</p>
+
+  <p class="govuk-body">Once you’ve applied, your ballot paper will arrive by post before polling day. You should complete it and post it back as quickly as possible, so that your vote gets counted. If you miss the deadline to return it, you can find out what to do on GOV.UK.</p>
+
+  <p class="govuk-body">Once you post it back, your ballot paper will be securely stored and then counted alongside all the other votes, once polls close on election day.</p>
+
+  <p class="govuk-body">To apply, search ‘apply postal vote’ on GOV.UK.</p>
 {% endcall %}
 
 <p class="govuk-body">You must apply for a postal vote if you want to vote by post, for example if:</p>
