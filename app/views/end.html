@@ -34,52 +34,24 @@
 {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
 
 
-
-
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">
-        Before you start
+      <h1 class="govuk-heading-xl">
+      During this application, we’ll ask you to upload a photo or scan of your handwritten signature
       </h1>
 
-      <form class="form" action="/path/of/next/page" method="post">
+<p>You might find it easier to apply on a phone or tablet with a camera. It may be quicker to upload the photo to your application there.</p>
+<p>If you cannot sign your name, you can ask for a signature waiver during your application.</p>
+<p>If you cannot take a photo of your signature now, close this application and try again when you can.</p>
 
-       <p class="govuk-body">You'll need:</p>
+       <p class="govuk-body">You'll also need:</p>
 
   <ul class="govuk-list govuk-list--bullet">
     <li>the UK address where you are registered to vote</li>
     <li>your National Insurance number or other identity documents, for example a passport</li>
-    <li>the specific date of the election or referendum you want to make a postal vote, if you only
-      want a one-off postal vote</li>
-    <li>an image of your signature written with a pen during this application</li>
   </ul>
 
-       <p class="govuk-body">Your signature must:</p>
-
-  <ul class="govuk-list govuk-list--bullet">
-    <li>be signed in black ink on plain white paper</li>
-    <li>look the same as it normally does</li>
-    <li>not be written with a stylus or a finger on a screen </li>
-  </ul>
-
-{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
-
-{{ govukInsetText({
-  text: "You might find it easier to prepare an image now, or apply on a mobile phone with a camera."
-}) }}
-
-<p><a class="govuk-link">Get help uploading a signature image</a></p>
-
-<p> If you cannot provide a signature or one that always looks the same, you can apply for a signature waiver within this service.
-  Your electoral registration office will decide if you're eligible.
-</p>
-
-<p> If you cannot upload an image, download, print out and fill in a <a class="govuk-link">postal vote application form.</a> 
-  Send it to <a class="govuk-link">your electoral registration office.</a>
-</p>
-<br><br>
 
        {{ govukButton({
   text: "Continue",
