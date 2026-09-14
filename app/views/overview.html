@@ -30,6 +30,7 @@
   <div class="govuk-grid-column-two-thirds">
 
 
+
        <h1 class="govuk-heading-xl">
        How to vote
       </h1>
@@ -410,7 +411,7 @@ Way of voting
 
             <ol class="app-step-nav__list " data-length="1">
               <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Contact the electoral registration</a>
+                <a data-position="7.1" class="app-step-nav__link js-link" class="govuk-link">Contact the electoral registration office</a>
               </li>
             </ol>
 
@@ -506,15 +507,19 @@ Way of voting
 </div>
 
 
-
 {% from "govuk/components/pagination/macro.njk" import govukPagination %}
+
 {{ govukPagination({
   next: {
-    labelText: "Voting in person",
-    href: "#"
+    labelText: "Voting by proxy",
+    href: "javascript:void(0)",
+    attributes: {
+      "tabindex": "-1",
+      "aria-disabled": "true",
+      "style": "pointer-events: none; cursor: default; text-decoration: none; color: inherit;"
+    }
   }
 }) }}
-
 
 <p>
 <a class="govuk-link"> View a printable version of the whole guide.</a> 
